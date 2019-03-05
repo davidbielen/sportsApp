@@ -1,0 +1,376 @@
+@font-face {
+	font-family: "sf";
+	src: url("font/SFMono-Regular.ttf");
+}
+@font-face {
+	font-family: "sf_bold";
+	src: url("font/SFMono-Bold.ttf");
+}
+@font-face {
+	font-family: "sf_semibold";
+	src: url("font/SFMono-Semibold.ttf");
+}
+@font-face {
+	font-family: "sf_medium";
+	src: url("font/SFMono-Medium.ttf");
+}
+@font-face {
+	font-family: "sf_thin";
+	src: url("font/SFMono-Light.ttf");
+}
+@font-face {
+	font-family: "spw";
+	src: url("font/I AM A PLAYER.ttf");
+}
+body{
+	font-size: 4vw;
+	font-family: "sf";
+	margin:0;
+	padding:0;
+	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
+	overflow:hidden;
+	overflow-x:hidden;
+	background-color: black;
+
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+#pagenumber{
+	position:fixed;
+	display: inline-flex;
+	margin:0;
+	padding:0;
+	width:100vw;
+	height:8vh !important;
+	min-height:8vh !important; 
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	background-color: #000 !important;
+	animation-name: startOpacitya;
+  	animation-duration: 0.50s;
+}
+@keyframes startOpacitya {
+  0%   {opacity:0;}
+  50%   {opacity:0;}
+  100% {opacity:1;}
+}
+
+.leftArrow{
+	font-size:11vw;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background-color: black !important;
+	height:8vh;
+	width:15vw;
+	color:white;
+}
+.leftArrow.pop{
+	font-size:40vw;
+	background-color: grey;
+	animation-name: popArrow;
+  	animation-duration: 0.1s;
+}
+@keyframes popArrow {
+  0%   {background-color: black;font-size:11vw;}
+  99%   {background-color: grey;font-size:40vw;}
+  100% {background-color: black;font-size:11vw !important;}
+}
+.leftArrow.black{
+	color:black;
+}
+.leftArrow.grey{
+	color:#777;
+}
+.leftArrow.white{
+	color:#fff;
+}
+
+#pagenumberNumber{
+	font-family: "sf";
+	font-size:7vw;
+	height:8vh;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background-color: #000 !important;
+	width:20vw;
+	color:#fff;
+	margin-left:10vw;
+}
+#menuIcon{
+	font-family: "sf";
+	font-size:10vw;
+	height:8vh;
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background-color: #000 !important;
+	width:10vw;
+	color:#fff;
+	margin-left:28vw;
+}
+#top{
+	position:fixed;
+	margin:0;
+	padding:0;
+	width:100vw;
+	height:7vh;
+	max-height:10vh !important;
+	top:8vh;
+	left:0;
+	overflow:hidden;
+	word-wrap: break-word;
+	display: inline-block;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	background-color: red !important;
+	color:white;
+	z-index:-1;
+	display:flex;
+	dragging: false,
+    -webkit-user-select: none;
+    user-select: none;
+	animation-name: startOpacityb;
+  	animation-duration: 0.75s;
+  	overflow-x:hidden;
+}
+
+#main{
+	position:fixed;
+	margin:0;
+	padding:0;
+	width:100vw;
+	height:85vh;
+	top:18vh;
+	left:0;
+	overflow:auto;
+	word-wrap: break-word;
+	display: inline-block;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	overflow: visible;
+	animation-name: startOpacityc;
+  	animation-duration: 1s;
+}
+@keyframes startOpacityc {
+  0%	{opacity:0;}
+  50%   {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.topElement1{
+	overflow:hidden;
+	position: fixed;
+	font-family: "spw";
+	display:flex;
+	width:29vw;
+	padding-left:2vw;
+	padding-top:0.3vh;
+	text-align:left;
+	background-color: black;
+	font-size:6.6vw !important;
+	height: 5.4vh;
+}
+.topElement2{
+	overflow:hidden;
+	font-family: "sf_bold";
+	display:flex;
+	position: fixed;
+	width:69vw;
+	left:31vw;
+	background-color: red;
+	font-size:5vw !important;
+	height: 7vh;
+	padding-top:1vh;
+	justify-content: center;
+	overflow:visible;
+	white-space: nowrap;
+	color:black;
+	text-align:center;
+}
+.topElement2Inner{
+	overflow:hidden;
+	display:flex;
+	color:white;
+	background-color: red;
+	width:100%;
+	height:3.1vh;
+	font-size:2.3vh !important;
+	justify-content: center;
+	flex-direction: column;
+  	text-align: center;
+  	border-bottom:0.8vh solid black;
+  	border-top:0.8vh solid black;
+}
+.topbottom1{
+	position:fixed;
+	display:inline-block;
+	top:15vh;
+	height:1.4vh;
+	width:31vw;
+	background-color: red;
+	animation: startOpacityb;
+	animation-duration: 1s;
+}
+@keyframes startOpacityb {
+  0%	{opacity:0;}
+  50%   {opacity:0;}
+  100% {opacity:1;}
+}
+.topbottom2{
+	position:fixed;
+	display:inline-block;
+	top:15vh;
+	height:1.4vh;
+	width:69vw;
+	left:31vw;
+	background-color: black;
+}
+
+.listWrapper{
+	display: inline-block;
+	overflow: visible;
+}
+.mainListElement{
+	float:left;
+	margin-top:0;
+	font-size:5vw;
+	color:#4ED8FE;
+	display: inline-block;
+	padding-top:1.2vh;
+	padding-bottom:1.2vh;
+	margin-left:3vw;
+	text-align:left;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	width:81vw;
+	max-width:81vw !important;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.mainListElement.soccer{
+}
+.pageNumber{
+	position: relative;
+	padding-top:1.2vh;
+	padding-bottom:1.2vh;
+	margin-top:0;
+	font-size:5vw;
+	color:#D6D923;
+	display: inline-block;
+	width:14vw;
+	text-align: right;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	white-space:nowrap;
+}
+.container{
+	overflow: visible;
+}
+#bubble{
+	position: absolute;
+	display:flex;
+	background-color: #EFEF2A;
+	border-radius:0.5vh;
+	right:3;
+	color:black;
+	width:0vw;
+	height:7vh;
+	font-size: 0vw;
+	z-index:100000;
+	margin-top:-15vh;
+	align-items: center;
+  	justify-content: center;
+  	animation-name: disappearBubble;
+  	animation-duration: 0.4s;
+  	padding:0vh;
+}
+@keyframes disappearBubble {
+  0%   {opacity:1;width:15vw;font-size: 7vw;padding:0.3vh;}
+  10%   {opacity:1;width:15vw;font-size: 7vw;padding:0.3vh;}
+  70%   {opacity:1;width:15vw;font-size: 7vw;padding:0.3vh;}
+  99%   {opacity:1;width:15vw;font-size: 7vw;padding:0.3vh;}
+  100% {opacity:0;width:0vw;font-size: 0vw;padding:0vh;}
+}
+
+.teamInLeagueName{
+	display:inline-block;
+	width: 59.3vw;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	padding-top:0.8vh;
+	padding-bottom:0.8vh;
+}
+.teamInLeagueStatistic{
+	font-size:4.4vw;
+	display:inline-block;
+	width:10vw;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	text-align:right;
+}
+.teamInLeagueStatistic.Position{
+	width:8vw;
+	text-align:left;
+	padding-left:1vw;
+	color:#333;
+}
+.teamInLeagueStatistic.Header{
+	color:#666;
+	margin-bottom:1vh;
+	font-size:4vw;
+}
+.bold{
+	font-family:"sf_bold";
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+
+.gameEventDate{
+	display: inline-block;
+	width:30vw;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+.gameEventTeam1{
+	display: inline-block;
+	width: 30vw;
+	text-align: right;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+.gameEventTeam2{
+	display: inline-block;
+	width: 30vw;
+	text-align: left;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+.gameEventSplit{
+	display: inline-block;
+	width: 5vw;
+	text-align: center;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+#gameWeek{
+	margin-top:3vh;
+	-webkit-transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+}
+/*
+.listWrapper div:nth-child(even) {
+	font-family:"sf";
+	background: #fff;
+	-webkit-transform: translateZ(0);
+}
+.listWrapper div:nth-child(odd) {
+	font-family:"sf";
+	background: #F0F0F0;
+	-webkit-transform: translateZ(0);
+}
+*/
